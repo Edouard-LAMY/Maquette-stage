@@ -1,0 +1,59 @@
+
+/* Débuggueur CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: .625em; 
+    font-size: calc(1em * .625); 
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+::-moz-selection {
+  color: #000;
+  background-color: #fd0;
+}
+
+::selection {
+  color: #000;
+  background-color: rgb(141, 223, 248);
+}
+
+[role="list"] {
+  margin: 0;
+  padding: 0;
+}
+
+label[for],
+button,
+input[type="submit"],
+select {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+ul{
+  list-style: none;
+}

@@ -1,0 +1,540 @@
+/* montserrat-regular*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v15-latin-regular.woff') format('woff'); 
+}
+
+  
+/* montserrat-600 */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'), 
+         url('../fonts/montserrat-v15-latin-600.woff') format('woff'); 
+}
+  
+/* montserrat-700 */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'), 
+         url('../fonts/montserrat-v15-latin-700.woff') format('woff'); 
+}
+
+/* Typography */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+
+:root{
+    --bleuHero: #175DA8;
+    --bleuPicto: #01bafd;
+    --greyLight: #F7F7F7;
+    --bleuF: #3B5997;
+    --red: #DE332C;
+    --bleuC: #006DC0;
+    --noir: #2D2D2D;
+}
+
+/* BOUTON HAUT DE PAGE */
+
+.btn-haut-page{
+    background-color: var(--bleuPicto);
+    border: .1rem solid var(--bleuC);
+    border-radius: .3rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.btn-haut-page:hover{
+    background-color: var(--bleuC);
+}
+
+.btn-haut-page span{
+    color: #fff;
+}
+
+/* HEADER */
+
+.reseau a img{
+    max-height: 2rem;
+    margin-left: 2rem;
+}
+
+.info a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+.info ul{
+    margin: 0;
+}
+
+.info li:not(:last-child){
+    margin-right: 1rem;
+}
+
+.info span{
+    margin-right: .5rem;
+    color: rgb(128, 128, 128);
+}
+
+.navbar{
+    background-color: #000;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: var(--bleuPicto);
+}
+
+.btn-burger button{
+    border: .1rem solid #fff !important;
+    font-size: 2rem;
+}
+
+#burger a{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 25.6em){
+    .info ul{
+        display: block !important;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 48em){
+    .reseau{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .dLogo{
+        text-align: center;
+    }
+    .info-col{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 62em){
+    .nav-link{
+        text-align: center;
+    }
+}
+
+/* HERO */
+
+.hero-img{
+    background-image: url(../image/img.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 40rem;
+}
+
+.hero-desc{
+    background-color: var(--bleuHero);
+    padding: 0 5rem;
+}
+
+.hero-desc h1{
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: .05rem;
+    margin: 3rem 0;
+}
+
+.hero-desc p{
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+.hero-desc img{
+    max-height: 18rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 56em){
+    .hero-desc img{
+        max-height: 12rem;
+    }
+}
+
+@media screen and (max-width: 48em){
+    .hero-desc h1, .hero-desc p{
+        text-align: center;
+    }
+}
+
+/* SECTION DECOUVERTE */
+
+.decouverte{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.subtitle-dec{
+    font-weight: 400;
+    letter-spacing: -.2rem;
+}
+
+.title-dec{
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--bleuHero);
+    text-transform: uppercase;
+}
+
+.text-dec{
+    color: var(--bleuHero);
+}
+
+.decouverte-porte{
+    margin-top: 4rem;
+}
+
+.title-por{
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--bleuHero);
+}
+
+.subtitle-por{
+    font-size: 2.2rem;
+    letter-spacing: -.1rem;
+}
+
+address li{
+    font-size: 2.4rem;
+    color: var(--bleuHero);
+}
+
+address li a, .text-porte a{
+    text-decoration: none;
+    color: var(--bleuHero);
+}
+
+
+.text-porte p{
+    font-size: 2rem;
+    color: var(--bleuHero);
+    margin: 0;
+}
+
+@media screen and (max-width: 48em){
+    .subtitle-dec{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .title-dec{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+    .text-dec, .text-porte p, .item-address{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .title-por{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .subtitle-por{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+
+/* SECTION FORMATION */
+
+.formation{
+    background-color: var(--greyLight);
+    padding-bottom: 5rem;
+    background-image: url(../image/img2.webp);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.title-formation{
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--bleuHero);
+    margin-bottom: 5rem;
+}
+
+.subtitle-formation{
+    padding-top: 5rem;
+    font-weight: 400;
+    letter-spacing: -.2rem;
+}
+
+.btn-slide{
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-control-prev{
+    margin-right: .5rem;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    position: relative;
+    height: 3.5rem;
+    width: 4rem;
+    color: var(--bleuPicto);
+    border: .2rem solid var(--bleuPicto);
+    border-radius: .3rem;
+}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus{
+    color: rgb(29, 163, 216);
+    border: .2rem solid rgb(29, 163, 216);
+}
+
+.multi-carousel-item{
+    box-shadow: 0px 3px 6px #00000029;
+    max-width: 26.5rem;
+    transition: .3s;
+}
+
+.multi-carousel-item:hover{
+    transform: scale(1.1);
+}
+
+.title-card-img{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 23%;
+}
+
+.subtitle-card-img{
+    font-size: 1.5rem;
+    letter-spacing: -.1rem;
+}
+
+.card-img-overlay{
+    bottom: 50%;
+    padding: 0;
+}
+
+.card-body p{
+    font-size: 1.4rem;
+    color: grey;
+    z-index: 50;
+}
+
+.card-body a{
+    color: var(--bleuPicto);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-body a:hover{
+    color: var(--bleuC);
+}
+
+@media screen and (max-width: 75em){
+    .multi-carousel-item{
+        max-width: 23rem;
+    }
+}
+
+
+@media screen and (max-width: 48em){
+    .subtitle-formation{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .title-formation{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+    .title-card-img{
+        font-size: 3.3rem;
+    }
+    .subtitle-card-img{
+        font-size: 1.4rem;
+    }
+}
+
+
+/* SECTION CLASSE */
+
+.classe{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.grid-reseau{
+    margin-top: 5rem;
+}
+
+.grid-reseau p{
+    font-size: 1.2rem;
+}
+
+.grid-reseau-item{
+    max-width: 26.5rem;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.grid-reseau-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 6px #00000029;
+
+}
+
+.reseau-facebook{
+    background-color: var(--bleuF);
+    background-image: url(../image/logo-facebook-reseau.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    padding-left: 8rem;
+}
+
+.reseau-twitter{
+    background-color: var(--bleuPicto);
+    background-image: url(../image/logo-twitter-reseau.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    padding-left: 8rem;
+}
+
+.reseau-google{
+    background-color: var(--red);
+    background-image: url(../image/logo-google-reseau.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    padding-left: 8rem;
+}
+
+.reseau-indeed{
+    background-color: var(--bleuC);
+    background-image: url(../image/logo-indeed-reseau.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    padding-left: 8rem;
+}
+
+@media screen and (max-width: 75em){
+    .grid-reseau-item{
+        max-width: 23rem;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    padding-top: 7rem;
+    background-color: var(--noir);
+}
+
+footer img{
+    max-width: 20rem;
+}
+
+footer h4{
+    color: var(--bleuPicto);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+footer p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: var(--bleuPicto);
+}
+
+.footer-ligne{
+    background-color: #222222;
+    padding: 1rem 2rem;
+    margin-top: 7rem;
+}
+
+.footer-ligne p{
+    color: var(--bleuPicto);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 48em){
+    .footer-address{
+        text-align: center;
+    }
+    footer img{
+        margin-bottom: 2rem;
+    }
+}
